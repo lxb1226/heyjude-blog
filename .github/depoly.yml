@@ -1,0 +1,46 @@
+name: deploy
+
+on:
+    push:
+    workflow_dispatch:
+    schedule:
+        # Runs everyday at 8:00 AM
+        - cron: '0 0 * * *'
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+              with:
+                  submodules: true
+                  fetch-depth: 0
+
+            - name: Setup Hugo
+              uses: peaceiris/actions-hugo@v2
+              with:
+                  hugo-version: 0.136.5
+                  extended: true
+
+            - name: Build Web
+              run: hugo --gc --minify
+
+            - name: Run Pagefind
+              run: npm_config_yes=true npx pagefind --source "public"
+
+            - name: Deploy Web
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+                  EXTERNAL_REPOSITORY: lxb1226/lxb1226.github.io
+                  PUBLISH_BRANCH: master
+                  PUBLISH_DIR: ./public
+                  commit_message: ${{ github.event.head_commit.message }}
+            # - name: Deploy Web
+            #   uses: peaceiris/actions-gh-pages@v3
+            #   with:
+            #       PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+            #       PUBLISH_BRANCH: cf-pages
+            #       PUBLISH_DIR: ./public
+            #       commit_message: ${{ github.event.head_commit.message }}
