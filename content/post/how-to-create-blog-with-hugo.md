@@ -1,13 +1,13 @@
 ---
-title: "How to Create Blog With Hugo"
+title: "10分钟搭建属于自己的blog网站"
 date: 2025-05-05T20:28:24+08:00
 lastmod: 2025-05-05T20:28:24+08:00
 draft: false
-keywords: ["hugo", "blog"]
+keywords: ["hugo", "blog", "theme"]
 description: "How to Create Blog With Hugo"
 tags: ["hugo", "blog"]
 categories: ["hugo", "blog"]
-author: ""
+author: "heyjude"
 
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
