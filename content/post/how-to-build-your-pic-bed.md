@@ -2,7 +2,7 @@
 title: "How to Build Your Pic Bed"
 date: 2025-05-11T13:05:40+08:00
 lastmod: 2025-05-11T13:05:40+08:00
-draft: draft
+draft: false
 keywords: []
 description: ""
 tags: []
