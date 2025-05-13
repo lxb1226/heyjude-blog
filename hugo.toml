@@ -176,6 +176,10 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     sitePV = true
     pagePV = true
 
+  [params.umami]
+    enable = true
+    dataWebsiteId = "19ce7c85-260c-41ef-91d8-6587d47a286a"
+
   [params.reward]                                         # 文章打赏
     enable = true
     wechat = "/img/wechatpay.JPG"           # 微信二维码
