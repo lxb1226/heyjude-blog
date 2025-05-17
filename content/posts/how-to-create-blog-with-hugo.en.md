@@ -11,7 +11,7 @@ author: "heyjude"
 
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
-comment: ture
+comment: true
 toc: true
 autoCollapseToc: false
 postMetaInFooter: false
