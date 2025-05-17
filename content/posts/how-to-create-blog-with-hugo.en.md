@@ -50,15 +50,15 @@ Hugo 是最受欢迎的开源静态网站生成器之一。用户可以使用 Hu
 ```bash
 brew install hugo
 ```
-![install](http://img.music-poster.art/2025/05/c9d27037a7d215ff8eaa14383cba62b6.png)
+![install](https://img.music-poster.art/2025/05/c9d27037a7d215ff8eaa14383cba62b6.png)
 
 安装完之后可以使用 `hugo version` 来查看是否安装好:
-![hugo_version](http://img.music-poster.art/2025/05/9368e5db6f1f18f70eba3017c7144a9b.png)
+![hugo_version](https://img.music-poster.art/2025/05/9368e5db6f1f18f70eba3017c7144a9b.png)
 
 ## 2.使用hugo创建blog网站
 安装完 hugo 之后，就可以使用 hugo 来搭建自己的blog网站了。
 使用`hugo new site my-blog` 来创建一个名为 my-blog 的网站。
-![new-blog-site](http://img.music-poster.art/2025/05/c31b6d2f942a44af304823b9b2d40e76.png)
+![new-blog-site](https://img.music-poster.art/2025/05/c31b6d2f942a44af304823b9b2d40e76.png)
 运行完之后就会在当前目录创建一个 my-blog 的目录。
 之后进入该目录，并使用 git 进行初始化。
 ```bash
@@ -72,7 +72,7 @@ git init
 ```bash
 git submodule add https://github.com/olOwOlo/hugo-theme-even.git themes/even
 ```
-![pick-theme](http://img.music-poster.art/2025/05/10d92ec7695324dd4db2cb0772f764f8.png)
+![pick-theme](https://img.music-poster.art/2025/05/10d92ec7695324dd4db2cb0772f764f8.png)
 之后将 `themes/even/exampleSite/config.toml` 拷贝到当前目录，并覆盖 `hugo.toml`
 ```bash
 cp themes/even/exampleSite/config.toml hugo.toml
@@ -84,17 +84,17 @@ cp themes/even/exampleSite/config.toml hugo.toml
 当配置好主题之后，就可以创建自己的blog了。
 使用`hugo new content content/post/my-first-post.md` 即可创建一篇blog。
 可以看到当执行完该命令后，在 `content/post/` 下面会出现一个新的md文件。
-![my-first-blog](http://img.music-poster.art/2025/05/b6760e2f47eed1c8a962e475f69adc92.png)
+![my-first-blog](https://img.music-poster.art/2025/05/b6760e2f47eed1c8a962e475f69adc92.png)
 
 
 ## 5.运行hugo
 当前面的配置好之后，就可以使用 `hugo server` 来启动一个hugo server。
-![](http://img.music-poster.art/2025/05/69da7f70c3795f266a83207d186d0ad4.png)
+![](https://img.music-poster.art/2025/05/69da7f70c3795f266a83207d186d0ad4.png)
 点击链接，即可访问blog网站的地址
-![](http://img.music-poster.art/2025/05/10ebbce59ca6637b1b44c8d884c471bd.png)
+![](https://img.music-poster.art/2025/05/10ebbce59ca6637b1b44c8d884c471bd.png)
 此时会发现，之前创建的那篇blog并没有在里面显示，原因是一开始创建的blog是`draft`,在`hugo server` 模式下并不会显示draft的blog。
 如果需要显示，则需要使用`hugo server -D`。
-![](http://img.music-poster.art/2025/05/72c092d59ad8143fa61188eac94ace32.png)
+![](https://img.music-poster.art/2025/05/72c092d59ad8143fa61188eac94ace32.png)
 
 以上就可以完成了blog网站的搭建了。
 

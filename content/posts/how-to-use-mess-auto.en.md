@@ -64,7 +64,7 @@ cargo install cargo-bundle --git https://github.com/zed-industries/cargo-bundle.
 cargo bundle --release
 ```
 当编译好之后，会在当前目录下的`target/release/bundle/osx/MessAuto.app`构建包。
-![](http://img.music-poster.art/2025/05/c090074301dfda862dea2b0797bcdeec.png)
+![](https://img.music-poster.art/2025/05/c090074301dfda862dea2b0797bcdeec.png)
 
 ## 2.使用
 ARM64 版本打开时会提示文件损坏，因其需要 Apple 开发者签名才可以正常启动，作者没有 Apple 开发者证书，不过你仍然可以通过一条命令解决问题：
@@ -75,7 +75,7 @@ ARM64 版本打开时会提示文件损坏，因其需要 Apple 开发者签名�
 
 ## 3.用法
 要程序正常工作，用户需要在ios上打开“短信转发”功能。在设置>信息>iMessage信息即可看到。
-![](http://img.music-poster.art/2025/05/20e37bdec4c71f08fe4605b2534b2113.jpeg)
+![](https://img.music-poster.art/2025/05/20e37bdec4c71f08fe4605b2534b2113.jpeg)
 
 MessAuto 是一个没有 GUI 的菜单栏软件，第一次启动时 MessAuto 会弹窗引导用户授权完全磁盘访问权限，授予权限后系统会要求重新打开软件。在 menubar 上可以看到该软件。其功能依次为：
 * 自动粘贴：MessAuto 将检测到的验证码存储到你的剪贴板中，如果你在输入验证码时不想手动粘贴，可以启用此选项，启用选项时 MessAuto 会主动提醒您进行辅助功能授权
