@@ -7,6 +7,7 @@ keywords: ["hugo", "blog", "theme"]
 description: "How to Create Blog With Hugo"
 tags: ["hugo", "blog"]
 categories: ["hugo", "blog"]
+series: ["blog tutorial"]
 author: "heyjude"
 
 # You can also close(false) or open(true) something for this content.
@@ -39,13 +40,13 @@ sequenceDiagrams:
   options: ""
 
 ---
-# hugo是什么
+## hugo是什么
 
 Hugo 是最受欢迎的开源静态网站生成器之一。用户可以使用 Hugo 来快速搭建自己的网站。
 
-# 搭建步骤
+## 搭建步骤
 
-## 1.安装hugo
+### 安装hugo
 在mac上面，可以使用以下命令来安装hugo:
 ```bash
 brew install hugo
@@ -55,7 +56,7 @@ brew install hugo
 安装完之后可以使用 `hugo version` 来查看是否安装好:
 ![hugo_version](https://img.music-poster.art/2025/05/9368e5db6f1f18f70eba3017c7144a9b.png)
 
-## 2.使用hugo创建blog网站
+### 使用hugo创建blog网站
 安装完 hugo 之后，就可以使用 hugo 来搭建自己的blog网站了。
 使用`hugo new site my-blog` 来创建一个名为 my-blog 的网站。
 ![new-blog-site](https://img.music-poster.art/2025/05/c31b6d2f942a44af304823b9b2d40e76.png)
@@ -66,7 +67,7 @@ cd my-blog
 git init
 ```
 
-## 3.选择一个theme
+### 选择一个theme
 在创建好网站之后，需要选择一个theme。这里有很多主题可供选择：[hugo themes](https://themes.gohugo.io/)
 在这里我选择的是 hugo-theme-even 这个主题。此时需要将其作为一个 submodule 放在themes/even下面。
 ```bash
@@ -78,16 +79,14 @@ git submodule add https://github.com/olOwOlo/hugo-theme-even.git themes/even
 cp themes/even/exampleSite/config.toml hugo.toml
 ```
 
-
-
-## 4.创建一篇blog
+### 创建一篇blog
 当配置好主题之后，就可以创建自己的blog了。
 使用`hugo new content content/post/my-first-post.md` 即可创建一篇blog。
 可以看到当执行完该命令后，在 `content/post/` 下面会出现一个新的md文件。
 ![my-first-blog](https://img.music-poster.art/2025/05/b6760e2f47eed1c8a962e475f69adc92.png)
 
 
-## 5.运行hugo
+### 运行hugo
 当前面的配置好之后，就可以使用 `hugo server` 来启动一个hugo server。
 ![](https://img.music-poster.art/2025/05/69da7f70c3795f266a83207d186d0ad4.png)
 点击链接，即可访问blog网站的地址
@@ -97,6 +96,15 @@ cp themes/even/exampleSite/config.toml hugo.toml
 ![](https://img.music-poster.art/2025/05/72c092d59ad8143fa61188eac94ace32.png)
 
 以上就可以完成了blog网站的搭建了。
+
+### 保存本地的blog到GitHub
+* 登录GitHub， 新建一个仓库（例如heyjude-blog）
+* 将本地仓库添加为远程：
+```
+git remote add origin https://github.com/yourusername/myblog.git
+git push
+```
+这样即可保存你的blog到GitHub。
 
 # 参考链接
 1. https://gohugo.io/getting-started/quick-start/
