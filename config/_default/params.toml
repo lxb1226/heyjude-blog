@@ -598,7 +598,7 @@ bundle = false
     data_website_id = "19ce7c85-260c-41ef-91d8-6587d47a286a"
     src = "https://umami-steel-one.vercel.app/script.js"
     data_host_url = ""
-    data_domains = "lxb1226.github.io"
+    data_domains = "heyjude.blog"
   # Plausible Analytics
   [analytics.plausible]
     data_domain = ""
