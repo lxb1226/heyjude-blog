@@ -424,7 +424,7 @@ bundle = false
     [page.comment.utterances]
       enable = true
       # owner/repo
-      repo = "Hugo-DoIt/utterances-comments"
+      repo = "lxb1226/lxb1226.github.io"
       issueTerm = "pathname"
       label = ""
       lightTheme = "github-light"
