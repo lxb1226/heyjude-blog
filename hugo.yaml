@@ -13,9 +13,95 @@ languages:
   en:
     languageName: "English"
     weight: 1
+    menu:
+      main:
+        - name: nav.posts
+          pageRef: /posts
+          weight: 20
+          params:
+            icon: posts
+        - name: nav.categories
+          pageRef: /categories
+          weight: 30
+          params:
+            icon: categories
+        - name: nav.tags
+          pageRef: /tags
+          weight: 40
+          params:
+            icon: tags
+        - name: nav.archives
+          pageRef: /archives
+          weight: 50
+          params:
+            icon: archive
+      footer:
+        - name: About
+          pageRef: /about
+          weight: 10
+          params:
+            icon: about
+        - name: Contact
+          pageRef: /contact
+          weight: 20
+          params:
+            icon: contact
+        - name: Privacy
+          pageRef: /privacy
+          weight: 25
+          params:
+            icon: lock
+        - name: RSS Feed
+          url: /index.xml
+          weight: 30
+          params:
+            icon: rss
   zh-cn:
     languageName: "简体中文"
     weight: 2
+    menu:
+      main:
+        - name: nav.posts
+          pageRef: /posts
+          weight: 20
+          params:
+            icon: posts
+        - name: nav.categories
+          pageRef: /categories
+          weight: 30
+          params:
+            icon: categories
+        - name: nav.tags
+          pageRef: /tags
+          weight: 40
+          params:
+            icon: tags
+        - name: nav.archives
+          pageRef: /archives
+          weight: 50
+          params:
+            icon: archive
+      footer:
+        - name: 关于我
+          pageRef: /about
+          weight: 10
+          params:
+            icon: about
+        - name: 联系我
+          pageRef: /contact
+          weight: 20
+          params:
+            icon: contact
+        - name: 隐私政策
+          pageRef: /privacy
+          weight: 25
+          params:
+            icon: lock
+        - name: RSS订阅
+          url: /index.xml
+          weight: 30
+          params:
+            icon: rss
 
 menus:
   main:
@@ -39,25 +125,6 @@ menus:
       weight: 50
       params:
         icon: archive
-
-
-  # footer menu
-  footer:
-    - name: About
-      pageRef: /about
-      weight: 10
-      params:
-        icon: about
-    - name: Contact
-      url: https://google.com
-      weight: 20
-      params:
-        icon: contact
-    - name: RSS Feed
-      url: /index.xml
-      weight: 30
-      params:
-        icon: rss
 
   # footer social link
   social:
