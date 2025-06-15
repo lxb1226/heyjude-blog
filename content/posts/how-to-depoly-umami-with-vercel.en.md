@@ -1,9 +1,10 @@
 ---
 title: Easily Deploy Umami for Website Traffic Statistics on Vercel
 date: 2025-06-15
-tags: [Umami, Vercel, Neon, Website Traffic Statistics, Open Source, Hugo]
+tags: [Umami, Vercel, Neon, Website Traffic Statistics, Open Source, Hugo, Web Analytics, Data Analytics, Visitor Tracking, Google Analytics Alternative, PostgreSQL, Zero-Cost Deployment]
 categories: [Technical Tutorial]
-description: This article details how to deploy the open-source website statistics tool Umami on Vercel and create a Neon database in Vercel Storage to quickly build a simple, lightweight, and privacy-focused website traffic analysis system, tailored for Hugo static site generation.
+keywords: [Umami deployment guide, Vercel free hosting, Neon database, website analytics, Google Analytics alternative, open source analytics, Hugo blog statistics, zero-cost setup, website visitor tracking, data privacy protection]
+description: This comprehensive guide shows you how to leverage Vercel's free services and Neon PostgreSQL database to quickly set up a privacy-focused website analytics system using Umami. This zero-cost solution is perfect for personal blogs and small to medium-sized websites, offering a lighter, more privacy-conscious alternative to Google Analytics. Through Vercel's Serverless architecture, you can easily implement website traffic monitoring that's fully compatible with Hugo and other static sites.
 ---
 
 Umami is a simple, fast, and privacy-focused open-source website statistics tool, making it an ideal alternative to Google Analytics. This article will guide you on how to deploy Umami on Vercel and create a Neon PostgreSQL database via Vercel Storage, to build a zero-cost, lightweight website traffic statistics system. This tutorial is specifically optimized for Hugo static site users, ensuring that the generated Markdown files are compatible with Hugo's static site generation.

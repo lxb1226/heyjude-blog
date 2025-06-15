@@ -2,8 +2,9 @@
 title: "Integrate Giscus Comment System into Hugo Blog"
 date: 2025-06-15
 slug: "giscus-comments-hugo"
-description: "Add a modern, GitHub-based comment system to your Hugo blog using Giscus."
-tags: ["Hugo", "Comment System", "Giscus", "Blog Setup"]
+tags: ["Hugo", "Comment System", "Giscus", "Blog Setup", "GitHub Discussions", "Static Blog", "Blog Interaction", "Open Source Comments", "Zero-Cost Setup"]
+keywords: ["Giscus comment system", "Hugo blog comments", "GitHub Discussions comments", "static blog comment solution", "open source commenting tool", "blog interaction system", "free comment system", "Hugo theme customization", "blog feature extension"]
+description: "This comprehensive guide demonstrates how to integrate the Giscus comment system into your Hugo blog, a modern commenting solution powered by GitHub Discussions. Learn how to set up a secure, Markdown-supported comment system with zero cost, featuring dark mode and multi-language support, perfectly suited for Hugo static blogs. No database required - all comment data is stored securely on GitHub, ensuring data safety and sustainability."
 ---
 
 This is the third tutorial on building your own blog system, focusing on adding a comment system.

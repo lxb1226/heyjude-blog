@@ -2,8 +2,9 @@
 title: "为 Hugo 博客接入 Giscus 评论系统"
 date: 2025-06-15
 slug: "giscus-comments-hugo"
-description: "使用 Giscus 为你的 Hugo 博客添加一个现代、基于 GitHub 的评论系统。"
-tags: ["Hugo", "评论系统", "Giscus", "博客搭建"]
+tags: ["Hugo", "评论系统", "Giscus", "博客搭建", "GitHub Discussions", "静态博客", "博客互动", "开源评论系统", "零成本部署"]
+keywords: ["Giscus评论系统", "Hugo博客评论", "GitHub Discussions评论", "静态博客评论解决方案", "开源评论工具", "博客互动系统", "免费评论系统", "Hugo主题定制", "博客功能扩展"]
+description: "本文详细介绍如何在 Hugo 博客中集成 Giscus 评论系统，这是一个基于 GitHub Discussions 的现代化评论解决方案。通过本教程，你将学会如何零成本搭建一个安全可靠、支持 Markdown 的评论系统，支持暗黑模式、多语言界面，完美适配 Hugo 静态博客。无需数据库，所有评论数据都存储在 GitHub 上，确保数据安全和可持续性。"
 ---
 
 这是搭建自己的blog系统的第三篇教程，为博客添加评论系统。

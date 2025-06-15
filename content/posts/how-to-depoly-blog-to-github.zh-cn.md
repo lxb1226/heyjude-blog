@@ -1,14 +1,14 @@
 ---
 title: "10分钟部署你的blog网站到github pages"
-subtitle: ""
+subtitle: "使用GitHub Pages免费托管你的Hugo博客"
 date: 2025-05-18T17:01:07+08:00
 lastmod: 2025-05-18T17:01:07+08:00
 draft: false
-authors: []
-description: ""
+authors: ["heyjude"]
+description: "详细指导如何将Hugo博客部署到GitHub Pages，包括仓库创建、GitHub Actions配置、自动化部署流程等内容，帮助你零成本搭建专业的个人博客网站。"
 
-tags: ["hugo", "github pages", "depoly"]
-categories: ["hugo", "github pages", "depoly"]
+tags: ["hugo", "github pages", "自动部署", "静态网站", "CI/CD"]
+categories: ["博客搭建", "技术教程", "自动化部署"]
 series: ["blog tutorial"]
 
 hiddenFromHomePage: false

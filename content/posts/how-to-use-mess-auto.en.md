@@ -3,10 +3,10 @@ title: "How to Auto-fill SMS Verification Codes on Mac"
 date: 2025-05-07T22:36:09+08:00
 lastmod: 2025-05-07T22:36:09+08:00
 draft: false
-keywords: ["mac", "verification code", "iphone", "MessAuto", "AutoCode"]
-description: "How to auto-fill SMS verification codes on Mac"
-tags: ["mac", "software", "MessAuto"]
-categories: ["tool"]
+keywords: ["mac verification code", "auto-fill", "MessAuto", "AutoCode", "iPhone sync", "SMS verification", "productivity tool", "automation"]
+description: "A comprehensive guide on configuring and using MessAuto to automatically sync and fill SMS verification codes from iPhone to Mac, enhancing daily workflow efficiency."
+tags: ["Mac", "Productivity", "MessAuto", "Automation", "iPhone", "Verification Code"]
+categories: ["Productivity Tools", "Tutorials", "Mac Apps"]
 author: "heyjude"
 
 # You can also close(false) or open(true) something for this content.

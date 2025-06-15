@@ -3,10 +3,10 @@ title: "Build Your Own Blog Website in 10 Minutes"
 date: 2025-05-05T20:28:24+08:00
 lastmod: 2025-05-05T20:28:24+08:00
 draft: false
-keywords: ["hugo", "blog", "theme"]
-description: "How to Create Blog With Hugo"
-tags: ["hugo", "blog"]
-categories: ["hugo", "blog"]
+keywords: ["hugo", "blog setup", "personal website", "static site generator", "blog theme", "web development"]
+description: "A detailed guide on creating a personal blog using Hugo static site generator, covering installation, theme selection, basic configuration, and content management - all in just 10 minutes."
+tags: ["hugo", "blog setup", "static site", "personal website", "tutorial"]
+categories: ["Blog Setup", "Tutorials"]
 series: ["blog tutorial"]
 author: "heyjude"
 

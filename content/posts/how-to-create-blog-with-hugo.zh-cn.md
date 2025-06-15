@@ -3,10 +3,10 @@ title: "10分钟搭建属于自己的blog网站"
 date: 2025-05-05T20:28:24+08:00
 lastmod: 2025-05-05T20:28:24+08:00
 draft: false
-keywords: ["hugo", "blog", "theme"]
-description: "How to Create Blog With Hugo"
-tags: ["hugo", "blog"]
-categories: ["hugo", "blog"]
+keywords: ["hugo", "博客搭建", "个人网站", "静态网站生成器", "博客主题", "网站开发"]
+description: "通过Hugo静态网站生成器快速搭建个人博客网站的详细教程，包括Hugo安装、主题选择、基础配置和内容管理等步骤，让你在10分钟内拥有一个专业的个人博客。"
+tags: ["hugo", "博客搭建", "静态网站", "个人网站", "技术教程"]
+categories: ["博客搭建", "技术教程"]
 series: ["blog tutorial"]
 author: "heyjude"
 

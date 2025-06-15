@@ -1,14 +1,14 @@
 ---
 title: "Deploy Your Blog Website to GitHub Pages in 10 Minutes"
-subtitle: ""
+subtitle: "Free Hosting for Your Hugo Blog on GitHub Pages"
 date: 2025-05-18T17:01:07+08:00
 lastmod: 2025-05-18T17:01:07+08:00
 draft: false
-authors: []
-description: ""
+authors: ["heyjude"]
+description: "Step-by-step guide on deploying your Hugo blog to GitHub Pages, including repository setup, GitHub Actions configuration, and automated deployment workflow, helping you create a professional blog website at zero cost."
 
-tags: ["hugo", "github pages", "deploy"]
-categories: ["hugo", "github pages", "deploy"]
+tags: ["hugo", "github pages", "automated deployment", "static site", "CI/CD"]
+categories: ["Blog Setup", "Tutorials", "Automation"]
 series: ["blog tutorial"]
 
 hiddenFromHomePage: false

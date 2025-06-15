@@ -1,9 +1,10 @@
 ---
 title: 在 Vercel 上部署 Umami 轻松实现网站流量统计
 date: 2025-06-15
-tags: [Umami, Vercel, Neon, 网站流量统计, 开源, Hugo]
+tags: [Umami, Vercel, Neon, 网站流量统计, 开源, Hugo, 网站分析, 数据统计, 访客统计, Google Analytics替代品, PostgreSQL, 零成本部署]
 categories: [技术教程]
-description: 本文详细介绍如何在 Vercel 上部署开源网站统计工具 Umami，并在 Vercel Storage 中创建 Neon 数据库作为存储，快速搭建一个简单、轻量且注重隐私的网站流量分析系统，适配 Hugo 静态网站生成。
+keywords: [Umami部署教程, Vercel免费部署, Neon数据库, 网站流量分析, Google Analytics替代方案, 开源统计工具, Hugo博客统计, 零成本建站, 网站访问量统计, 数据隐私保护]
+description: 本文提供详细的 Umami 部署指南，教你如何利用 Vercel 的免费服务和 Neon PostgreSQL 数据库，快速搭建一个注重隐私的网站访问量统计系统。这个零成本解决方案特别适合个人博客和中小型网站，提供了比 Google Analytics 更轻量、更注重隐私的统计服务。通过 Vercel 的 Serverless 架构，你可以轻松实现网站流量监控，且完全兼容 Hugo 等静态网站。
 ---
 
 Umami 是一个简单、快速、注重隐私的开源网站统计工具，是 Google Analytics 的理想替代品。本文将指导你如何在 Vercel 上部署 Umami，并通过 Vercel Storage 创建 Neon PostgreSQL 数据库，搭建一个零成本、轻量级的网站流量统计系统。本教程特别为 Hugo 静态网站用户优化，确保生成的 Markdown 文件适配 Hugo 的静态网页生成。
