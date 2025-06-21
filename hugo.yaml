@@ -100,7 +100,7 @@ languages:
         - name: RSS订阅
           url: /index.xml
           weight: 30
-        params:
+          params:
             icon: rss
   ja:
     languageName: "日本語"
