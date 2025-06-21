@@ -5,6 +5,12 @@
 # Uses zh-cn as the source language and translates to specified target languages
 # Supports both single-language and multi-language translation files
 # Default target languages: English (en), Spanish (es), French (fr), Japanese (ja), Korean (ko)
+# 
+# BEHAVIOR:
+# - Processes ALL files in the posts directory
+# - Skips individual translations that already exist
+# - Creates missing translations for files that are partially translated
+# - Tracks detailed statistics of processed files and translations
 
 # Strict mode
 set -euo pipefail
@@ -358,8 +364,8 @@ process_source_file() {
   fi
   
   # If it's a multi-language file, use those languages, otherwise use TARGET_LANGS
-  local langs_to_process=()
-  if [ "$is_multi_lang" = true ]; then
+  declare -a langs_to_process
+  if [ "$is_multi_lang" = true ] && [ ${#file_target_langs[@]} -gt 0 ]; then
     langs_to_process=("${file_target_langs[@]}")
   else
     # First check which languages need translation
@@ -376,14 +382,14 @@ process_source_file() {
       fi
     done
     
-    # If all translations exist, skip this file
+    # If all translations exist, log that we're skipping this file
     if [ "$all_exist" = true ]; then
       log_info "Skipping $base_name (all translations exist)"
       # Return counts: 0 translations, all skipped, 0 errors
       # Safely get the array length with explicit check
       local target_langs_count=${#TARGET_LANGS[@]}
       printf "0:%d:0\n" "$target_langs_count"
-      return 2  # Return code 2 means all skipped
+      # Don't return here, let the function continue processing
     fi
   fi
   
@@ -412,6 +418,12 @@ process_source_file() {
     esac
   else
     # Process each target language individually
+    if [ ${#langs_to_process[@]} -eq 0 ]; then
+      log_info "No languages to process for $source_file"
+      printf "0:%d:0\n" "$skipped"
+      return 0
+    fi
+    
     for lang in "${langs_to_process[@]}"; do
       log_info "➡️ Starting translation of $source_file to $lang..."
       translate_file "$source_file" "$lang"
@@ -441,12 +453,14 @@ process_source_file() {
   printf "%d:%d:%d\n" "$translated" "$skipped" "$errors"
   
   # Set appropriate exit status
-  if [ "$any_error" = true ]; then
-    return 1  # Error occurred
-  elif [ "$any_translated" = true ]; then
-    return 0  # Successfully translated at least one language
+  # Only return error status if ALL translations failed
+  # Otherwise return success to continue processing other files
+  if [ "$translated" -eq 0 ] && [ "$errors" -gt 0 ]; then
+    return 1  # All translations failed
+  elif [ "$translated" -gt 0 ]; then
+    return 0  # At least one translation succeeded
   else
-    return 2  # All translations skipped
+    return 0  # All translations skipped, but continue processing
   fi
 }
 
@@ -455,10 +469,12 @@ main() {
   # Create a temporary log file
   local BUILD_LOG="/tmp/translate-posts-$$.log"  # Temporary log file
   
+  # Enhanced statistics tracking
   local files_processed=0
   local files_with_new_translations=0
   local files_skipped=0
   local files_with_errors=0
+  local files_need_translation=0
   local total_translated=0
   local total_skipped=0
   local total_errors=0
@@ -563,13 +579,19 @@ main() {
     else
       ((files_skipped++))
     fi
-  done
-  
-  # Print summary
+    
+    # Check if the file actually had any new translations created
+    if [ "$translated" -gt 0 ]; then
+      ((files_need_translation++))
+    fi
+    done
+    
+    # Print summary
   echo "========================================="
   log_success "🎉 Translation complete!"
   log_info "📊 Summary:"
   log_info "  📁 Files processed: $files_processed"
+  log_info "  📄 Files that needed translation: $files_need_translation"
   log_info "  ✅ Files with new translations: $files_with_new_translations"
   log_info "  ⏭️ Files skipped (all translations exist): $files_skipped"
   log_info "  ❌ Files with errors: $files_with_errors"
