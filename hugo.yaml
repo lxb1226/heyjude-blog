@@ -100,6 +100,98 @@ languages:
         - name: RSS订阅
           url: /index.xml
           weight: 30
+        params:
+            icon: rss
+  ja:
+    languageName: "日本語"
+    weight: 3
+    menu:
+      main:
+        - name: "投稿"
+          pageRef: /posts
+          weight: 20
+          params:
+            icon: posts
+        - name: "カテゴリー"
+          pageRef: /categories
+          weight: 30
+          params:
+            icon: categories
+        - name: "タグ"
+          pageRef: /tags
+          weight: 40
+          params:
+            icon: tags
+        - name: "アーカイブ"
+          pageRef: /archives
+          weight: 50
+          params:
+            icon: archive
+      footer:
+        - name: "このサイトについて"
+          pageRef: /about
+          weight: 10
+          params:
+            icon: about
+        - name: "連絡先"
+          pageRef: /contact
+          weight: 20
+          params:
+            icon: contact
+        - name: "プライバシーポリシー"
+          pageRef: /privacy
+          weight: 25
+          params:
+            icon: lock
+        - name: "RSSフィード"
+          url: /index.xml
+          weight: 30
+          params:
+            icon: rss
+  ko:
+    languageName: "한국어"
+    weight: 4
+    menu:
+      main:
+        - name: "게시물"
+          pageRef: /posts
+          weight: 20
+          params:
+            icon: posts
+        - name: "카테고리"
+          pageRef: /categories
+          weight: 30
+          params:
+            icon: categories
+        - name: "태그"
+          pageRef: /tags
+          weight: 40
+          params:
+            icon: tags
+        - name: "아카이브"
+          pageRef: /archives
+          weight: 50
+          params:
+            icon: archive
+      footer:
+        - name: "소개"
+          pageRef: /about
+          weight: 10
+          params:
+            icon: about
+        - name: "문의"
+          pageRef: /contact
+          weight: 20
+          params:
+            icon: contact
+        - name: "개인정보처리방침"
+          pageRef: /privacy
+          weight: 25
+          params:
+            icon: lock
+        - name: "RSS 피드"
+          url: /index.xml
+          weight: 30
           params:
             icon: rss
 
