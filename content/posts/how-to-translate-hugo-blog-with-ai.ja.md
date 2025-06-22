@@ -1,8 +1,7 @@
 ---
 title: "AIを使ってHugoブログを自動翻訳する方法"
 subtitle: "OpenAIを利用してブログの多言語サポートを実現"
-date: 2024-01-20T10:00:00+08:00
-lastmod: 2024-01-20T10:00:00+08:00
+date: 2025-06-22T10:00:00+08:00
 draft: false
 authors: ["heyjude"] 
 description: "この記事では、AIツールを使ってHugoブログを自動で多言語に翻訳し、ブログの国際化を実現する方法をご紹介します。"
@@ -113,7 +112,7 @@ export API_KEY='your-api-key'
 ```bash
 TARGET_LANGS="en ja ko" ./translate-posts.sh
 ```
-![](https://img.music-poster.art/2025/06/332de26f29f6f15ea703b5e8feae913e.png)
+![](https://img.music-poster.art/2025/06/d4a96bd60970c9a0e3f2f54ce7167ba1.png)
 
 ### 6. ファイル命名規則
 

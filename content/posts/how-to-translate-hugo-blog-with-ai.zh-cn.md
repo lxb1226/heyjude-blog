@@ -1,8 +1,7 @@
 ---
 title: "如何使用AI自动翻译Hugo博客"
 subtitle: "利用OpenAI实现博客多语言支持"
-date: 2024-01-20T10:00:00+08:00
-lastmod: 2024-01-20T10:00:00+08:00
+date: 2025-06-22T10:00:00+08:00
 draft: false
 authors: ["heyjude"] 
 description: "本文介绍如何使用AI工具自动将Hugo博客翻译成多种语言，实现博客的国际化。"
@@ -113,7 +112,7 @@ export API_KEY='your-api-key'
 ```bash
 TARGET_LANGS="en ja ko" ./translate-posts.sh
 ```
-![](https://img.music-poster.art/2025/06/332de26f29f6f15ea703b5e8feae913e.png)
+![](https://img.music-poster.art/2025/06/d4a96bd60970c9a0e3f2f54ce7167ba1.png)
 
 ### 5. 文件命名规则
 

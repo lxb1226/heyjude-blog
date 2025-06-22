@@ -1,8 +1,7 @@
 ---
 title: "AI를 활용한 Hugo 블로그 자동 번역 방법"
 subtitle: "OpenAI를 통한 블로그 다국어 지원"
-date: 2024-01-20T10:00:00+08:00
-lastmod: 2024-01-20T10:00:00+08:00
+date: 2025-06-22T10:00:00+08:00
 draft: false
 authors: ["heyjude"] 
 description: "이 문서는 AI 도구를 사용하여 Hugo 블로그를 자동으로 여러 언어로 번역하는 방법을 소개하며, 블로그의 국제화를 실현합니다."
@@ -113,7 +112,7 @@ export API_KEY='your-api-key'
 ```bash
 TARGET_LANGS="en ja ko" ./translate-posts.sh
 ```
-![](https://img.music-poster.art/2025/06/332de26f29f6f15ea703b5e8feae913e.png)
+![](https://img.music-poster.art/2025/06/d4a96bd60970c9a0e3f2f54ce7167ba1.png)
 
 ### 5. 파일 명명 규칙
 
