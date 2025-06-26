@@ -403,8 +403,8 @@ params:
       enabled: false
       id: "your-baidu-analytics-id"
     clarity:
-      enabled: false
-      analytics: "your-clarity-analytics-id"
+      enabled: true
+      analytics: "s5isr8tvb4"
     google:
       enabled: true 
       id: "G-3L0SCGCQNM"
