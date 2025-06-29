@@ -404,7 +404,7 @@ params:
       id: "your-baidu-analytics-id"
     clarity:
       enabled: true
-      analytics: "s5isr8tvb4"
+      id: "s5isr8tvb4"
     google:
       enabled: true 
       id: "G-3L0SCGCQNM"
