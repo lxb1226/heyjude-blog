@@ -111,36 +111,6 @@ languages:
           weight: 50
           params:
             icon: archive
-        - name: "TmpMail"
-          url: https://www.tmpmail.online/
-          weight: 35
-          params:
-            icon: link
-        - name: "FreeConvert"
-          url: https://www.freeconvert.cc
-          weight: 40
-          params:
-            icon: link
-        - name: "TeraDownloader"
-          url: "https://www.tera-downloader.cc/"
-          weight: 40
-          params:
-            icon: link
-        - name: "Faviconify"
-          url: "https://www.faviconify.online/"
-          weight: 40
-          params:
-            icon: link
-        - name: "Avatify"
-          url: "https://www.avatify.online/"
-          weight: 40
-          params:
-            icon: link
-        - name: "Postery"
-          url: "https://www.posterfy.art/"
-          weight: 40
-          params:
-            icon: link
       footer:
         - name: 关于我
           pageRef: /about
