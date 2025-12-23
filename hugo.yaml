@@ -66,24 +66,14 @@ languages:
           weight: 40
           params:
             icon: link
-        - name: "TeraDownloader"
-          url: "https://www.tera-downloader.cc/"
-          weight: 40
+        - name: "MP3To"
+          url: https://mp3to.cc
+          weight: 45
           params:
             icon: link
-        - name: "Faviconify"
-          url: "https://www.faviconify.online/"
-          weight: 40
-          params:
-            icon: link
-        - name: "Avatify"
-          url: "https://www.avatify.online/"
-          weight: 40
-          params:
-            icon: link
-        - name: "Postery"
-          url: "https://www.posterfy.art/"
-          weight: 40
+        - name: "EasyPDF"
+          url: https://easypdftools.org
+          weight: 50
           params:
             icon: link
   zh-cn:
@@ -142,24 +132,14 @@ languages:
           weight: 40
           params:
             icon: link
-        - name: "TeraDownloader"
-          url: "https://www.tera-downloader.cc/"
-          weight: 40
+        - name: "MP3转换"
+          url: https://mp3to.cc
+          weight: 45
           params:
             icon: link
-        - name: "Faviconify"
-          url: "https://www.faviconify.online/"
-          weight: 40
-          params:
-            icon: link
-        - name: "Avatify"
-          url: "https://www.avatify.online/"
-          weight: 40
-          params:
-            icon: link
-        - name: "Postery"
-          url: "https://www.posterfy.art/"
-          weight: 40
+        - name: "PDF工具"
+          url: https://easypdftools.org
+          weight: 50
           params:
             icon: link
         
@@ -219,24 +199,14 @@ languages:
           weight: 40
           params:
             icon: link
-        - name: "TeraDownloader"
-          url: "https://www.tera-downloader.cc/"
-          weight: 40
+        - name: "MP3変換"
+          url: https://mp3to.cc
+          weight: 45
           params:
             icon: link
-        - name: "Faviconify"
-          url: "https://www.faviconify.online/"
-          weight: 40
-          params:
-            icon: link
-        - name: "Avatify"
-          url: "https://www.avatify.online/"
-          weight: 40
-          params:
-            icon: link
-        - name: "Postery"
-          url: "https://www.posterfy.art/"
-          weight: 40
+        - name: "PDFツール"
+          url: https://easypdftools.org
+          weight: 50
           params:
             icon: link
   ko:
@@ -295,27 +265,16 @@ languages:
           weight: 40
           params:
             icon: link
-        - name: "TeraDownloader"
-          url: "https://www.tera-downloader.cc/"
-          weight: 40
+        - name: "MP3 변환"
+          url: https://mp3to.cc
+          weight: 45
           params:
             icon: link
-        - name: "Faviconify"
-          url: "https://www.faviconify.online/"
-          weight: 40
+        - name: "PDF 도구"
+          url: https://easypdftools.org
+          weight: 50
           params:
             icon: link
-        - name: "Avatify"
-          url: "https://www.avatify.online/"
-          weight: 40
-          params:
-            icon: link
-        - name: "Postery"
-          url: "https://www.posterfy.art/"
-          weight: 40
-          params:
-            icon: link
-
 menus:
   main:
     - name: nav.posts
