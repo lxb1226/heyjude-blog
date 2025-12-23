@@ -275,6 +275,138 @@ languages:
           weight: 50
           params:
             icon: link
+  es:
+    languageName: "Español"
+    weight: 5
+    menu:
+      main:
+        - name: nav.posts
+          pageRef: /posts
+          weight: 20
+          params:
+            icon: posts
+        - name: nav.categories
+          pageRef: /categories
+          weight: 30
+          params:
+            icon: categories
+        - name: nav.tags
+          pageRef: /tags
+          weight: 40
+          params:
+            icon: tags
+        - name: nav.archives
+          pageRef: /archives
+          weight: 50
+          params:
+            icon: archive
+      footer:
+        - name: "Acerca de"
+          pageRef: /about
+          weight: 10
+          params:
+            icon: about
+        - name: "Contacto"
+          pageRef: /contact
+          weight: 20
+          params:
+            icon: contact
+        - name: "Privacidad"
+          pageRef: /privacy
+          weight: 25
+          params:
+            icon: file-text
+        - name: "RSS Feed"
+          url: /index.xml
+          weight: 30
+          params:
+            icon: rss
+        - name: "TmpMail"
+          url: https://www.tmpmail.online/
+          weight: 35
+          params:
+            icon: link
+        - name: "FreeConvert"
+          url: https://www.freeconvert.cc
+          weight: 40
+          params:
+            icon: link
+        - name: "MP3To"
+          url: https://mp3to.cc
+          weight: 45
+          params:
+            icon: link
+        - name: "EasyPDF"
+          url: https://easypdftools.org
+          weight: 50
+          params:
+            icon: link
+  pt:
+    languageName: "Português"
+    weight: 6
+    menu:
+      main:
+        - name: nav.posts
+          pageRef: /posts
+          weight: 20
+          params:
+            icon: posts
+        - name: nav.categories
+          pageRef: /categories
+          weight: 30
+          params:
+            icon: categories
+        - name: nav.tags
+          pageRef: /tags
+          weight: 40
+          params:
+            icon: tags
+        - name: nav.archives
+          pageRef: /archives
+          weight: 50
+          params:
+            icon: archive
+      footer:
+        - name: "Sobre"
+          pageRef: /about
+          weight: 10
+          params:
+            icon: about
+        - name: "Contato"
+          pageRef: /contact
+          weight: 20
+          params:
+            icon: contact
+        - name: "Privacidade"
+          pageRef: /privacy
+          weight: 25
+          params:
+            icon: file-text
+        - name: "RSS Feed"
+          url: /index.xml
+          weight: 30
+          params:
+            icon: rss
+        - name: "TmpMail"
+          url: https://www.tmpmail.online/
+          weight: 35
+          params:
+            icon: link
+        - name: "FreeConvert"
+          url: https://www.freeconvert.cc
+          weight: 40
+          params:
+            icon: link
+        - name: "MP3To"
+          url: https://mp3to.cc
+          weight: 45
+          params:
+            icon: link
+        - name: "EasyPDF"
+          url: https://easypdftools.org
+          weight: 50
+          params:
+            icon: link
 menus:
   main:
     - name: nav.posts
